@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="265.0" prefWidth="437.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DatePickerController">
+   <children>
+      <Label layoutX="43.0" layoutY="38.0" prefHeight="17.0" prefWidth="54.0" text="==&gt;&gt;" textFill="RED" AnchorPane.leftAnchor="43.0" AnchorPane.topAnchor="38.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="lbToSee" layoutX="97.0" layoutY="38.0" prefHeight="17.0" prefWidth="74.0" textFill="RED">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font></Label>
+      <DatePicker fx:id="DPDate" layoutX="43.0" layoutY="96.0" promptText="DD/MM/AAAA" />
+      <Button fx:id="btOk" layoutX="260.0" layoutY="96.0" mnemonicParsing="false" onAction="#onBtOkAction" text="OK" />
+      <Label fx:id="lbError" layoutX="43.0" layoutY="124.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="63.0" text="Informe a data abaixo" />
+   </children>
+</AnchorPane>
